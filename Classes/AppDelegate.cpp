@@ -1,7 +1,9 @@
 #include "AppDelegate.h"
 #include "HelloWorldScene.h"
+#include "Utility/SceneSupport/SceneCreator.h"
+#include "Game/Scene/GameMain/GameMainScene.h"
 
-USING_NS_CC;
+using namespace cocos2d;
 
 AppDelegate::AppDelegate() {
 
@@ -12,25 +14,23 @@ AppDelegate::~AppDelegate()
 }
 
 bool AppDelegate::applicationDidFinishLaunching() {
-    // initialize director
+
     auto director = Director::getInstance();
     auto glview = director->getOpenGLView();
+
     if(!glview) {
-        glview = GLView::create("My Game");
+        glview = GLView::create("proj_DDM");
         director->setOpenGLView(glview);
     }
 
-    // turn on display FPS
-    director->setDisplayStats(true);
+    director->setDisplayStats( false );
+	director->setAnimationInterval( 1.f / 60.f );
 
-    // set FPS. the default value is 1.0/60 if you don't call this
-    director->setAnimationInterval(1.0 / 60);
+	glview->setDesignResolutionSize( 1280, 720, ResolutionPolicy::SHOW_ALL );
 
-    // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
-
-    // run
-    director->runWithScene(scene);
+	auto firstScene = SceneCreator::createPhysicsScene(GameMainScene::create(), Vect(0, -9.8f), 1.0f, true);
+	auto scene = TransitionFade::create(1.5f, firstScene, Color3B::BLACK);
+	director->runWithScene(scene);
 
     return true;
 }
