@@ -87,6 +87,27 @@
     <ClCompile Include="..\Classes\Utility\FileIO\PlistReader.cpp">
       <Filter>Classes\Utility\FileIO</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\StageObject\StageMap\BlockDataReader.cpp">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\StageObject\StageMap\BlockFactory.cpp">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\StageObject\StageMap\BlockManager.cpp">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\StageObject\StageMap\GoalBlock.cpp">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\StageObject\StageMap\NormalBlock.cpp">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Utility\cocosAssistant\ListenerAssistant.cpp">
+      <Filter>Classes\Utility\cocosAssistant</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Game\Object\StageObject\StageMap\RedBlock.cpp">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -121,6 +142,39 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Utility\FileIO\PlistReader.h">
       <Filter>Classes\Utility\FileIO</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\StageMap\BlockData.h">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\StageMap\BlockDataReader.h">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\StageMap\BlockFactory.h">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\StageMap\BlockManager.h">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\StageMap\GoalBlock.h">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\StageMap\NormalBlock.h">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\StageObj.h">
+      <Filter>Classes\Game\Object\StageObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\ObjectType.h">
+      <Filter>Classes\Game\Object\StageObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utility\cocosAssistant\ListenerAssistant.h">
+      <Filter>Classes\Utility\cocosAssistant</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\StageMap\RedBlock.h">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Game\Object\StageObject\StageMap\Panel.h">
+      <Filter>Classes\Game\Object\StageObject\StageMap</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
