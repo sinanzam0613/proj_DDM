@@ -136,12 +136,28 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\GameMain\GameMainScene.cpp" />
+    <ClCompile Include="..\Classes\Game\Scene\GameMain\GameMainState.cpp" />
     <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\Utility\Action\Follow\CustomFollow.cpp" />
+    <ClCompile Include="..\Classes\Utility\cocosAssistant\SpriteCreator.cpp" />
+    <ClCompile Include="..\Classes\Utility\FileIO\PlistReader.cpp" />
+    <ClCompile Include="..\Classes\Utility\SceneSupport\IScene.cpp" />
+    <ClCompile Include="..\Classes\Utility\SceneSupport\SceneCreator.cpp" />
+    <ClCompile Include="..\Classes\Utility\Timer\Timer.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="..\Classes\Game\Scene\GameMain\GameMainScene.h" />
+    <ClInclude Include="..\Classes\Game\Scene\GameMain\GameMainState.h" />
     <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\Utility\Action\Follow\CustomFollow.h" />
+    <ClInclude Include="..\Classes\Utility\cocosAssistant\SpriteCreator.h" />
+    <ClInclude Include="..\Classes\Utility\FileIO\PlistReader.h" />
+    <ClInclude Include="..\Classes\Utility\SceneSupport\IScene.h" />
+    <ClInclude Include="..\Classes\Utility\SceneSupport\SceneCreator.h" />
+    <ClInclude Include="..\Classes\Utility\Timer\Timer.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>
